@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="m.js"></script>
+    <title>Document</title>
+   
+</head>
+<body id="badi">
+    <div>
+        <button id="dugme" type="submit" style="background-color:aqua; position:relative; top:330px; left:600px">Random Color</button>
+        <button id="hsl" type="submit" style="background-color:aqua; position:relative; top:330px; left:610px">Random HEX Color</button>
+    </div>
+
+    <script>
+    
+    var b = document.getElementById('badi');
+    var button = document.getElementById('hsl');
+    
+    
+    var colorElements = [1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+    //var hslColor = '#';
+    button.addEventListener( 'click', () => {
+        var hslColor = '#';
+        console.log(hslColor)
+           for(var i = 0; i<6; i++){
+           var random =  colorElements[Math.floor(Math.random() * colorElements.length)]
+             hslColor +=random
+           }
+           console.log(hslColor)
+           b.style.backgroundColor = hslColor
+    })
+    
+    </script>
+</body>
+</html>
