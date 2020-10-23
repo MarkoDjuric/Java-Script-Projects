@@ -1,0 +1,57 @@
+body{
+min-height: 100vh;
+display:flex;
+align-items: center;   /*vertikalno8*/
+justify-content: center; /*centriranje po horizontalo*/
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 500px;
+background-color: rgb(224, 50, 50);
+text-transform: capitalize;
+}
+
+#container {
+ text-align: center;
+ padding: 2rem;
+ background-color: cornsilk;
+ border-radius: 6px;
+ flex: 0 0 60%; /* razvlacenje po sirini div-a od ukupne sirine ekrana*/
+
+}
+
+#quoteBtn {
+    border: none;
+    background-color: rgb(6, 240, 240);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color:black;
+    font-size: 1rem;
+    margin-top: 12px;
+
+}
+
+#quoteBtn:hover{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+blockquote{
+    border-left: 12px solid rgb(183, 214, 136);
+    margin: 1.5rem;
+    padding: 1%;
+
+}
+
+h3{
+    color: rgb(245, 48, 13);
+}
+#quote{
+     font-style: italic;
+     color: rgb(60, 111, 187);
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    font-family: monospace;
+    color: rgb(194, 144, 50);
+}
